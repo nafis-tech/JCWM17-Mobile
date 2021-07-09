@@ -1,0 +1,16 @@
+{
+    "product" : [
+        {
+            "name": "sabun",
+            "harga": 2000
+        },
+        {
+            "name": "sabun",
+            "harga": 2000
+        },
+        {
+            "name": "sabun",
+            "harga": 2000
+        }
+    ]
+}

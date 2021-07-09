@@ -1,0 +1,939 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00E356F31AD99517003FC87E /* JCWM17Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* JCWM17Tests.m */; };
+		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		2E89CBAD3A89467A9E2862C8 /* AveriaSansLibre-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 925F852E46ED4376B6D6F80A /* AveriaSansLibre-Bold.ttf */; };
+		DFDD4A93019E4304974E9378 /* AveriaSansLibre-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39A5B6C972E745B2B5D8832D /* AveriaSansLibre-BoldItalic.ttf */; };
+		EBD4400F9E3B42C086E99D9E /* AveriaSansLibre-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5B47F35987747C988FC3AD6 /* AveriaSansLibre-Italic.ttf */; };
+		2A412D38B1CB4DAF9B5C15CA /* AveriaSansLibre-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9EA77FDFC774C5C80A92EAB /* AveriaSansLibre-Light.ttf */; };
+		3E1EBCF6E5024AAC971D8AAE /* AveriaSansLibre-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B2A43EB7562439DBA2D942D /* AveriaSansLibre-LightItalic.ttf */; };
+		706979A5C451409CB7ADF052 /* AveriaSansLibre-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 320D9F6D9D5E452C98528A71 /* AveriaSansLibre-Regular.ttf */; };
+		14FBEAE10F69434AAE915B90 /* Tourney_Condensed-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 68BD2877CAED41A08DCD4AF9 /* Tourney_Condensed-Black.ttf */; };
+		45CE6DCA42A548F9B2F274D9 /* Tourney_Condensed-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5ECFA8FFC7FB45A7B18AA1A2 /* Tourney_Condensed-BlackItalic.ttf */; };
+		628B58A9333C4DC9A72C266E /* Tourney_Condensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E325F6B37C14D99A2DBDE48 /* Tourney_Condensed-Bold.ttf */; };
+		797766D63E5C47D6B95B183C /* Tourney_Condensed-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD3EB554B4524E0098F01A87 /* Tourney_Condensed-BoldItalic.ttf */; };
+		005CF2BD2E7842798749AE2E /* Tourney_Condensed-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 051A882AAE8D4F2CA79346B2 /* Tourney_Condensed-ExtraBold.ttf */; };
+		B712CD25FD2B441CADFBE39E /* Tourney_Condensed-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E4D38377245437D9DDC12CD /* Tourney_Condensed-ExtraBoldItalic.ttf */; };
+		7F8F0576E239487BB0DEB309 /* Tourney_Condensed-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0ABD584D7FD94F4EBA16F545 /* Tourney_Condensed-ExtraLight.ttf */; };
+		EA4722BA78EE4E94AFD25DA7 /* Tourney_Condensed-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F88A8091EF1A46B489E74C81 /* Tourney_Condensed-ExtraLightItalic.ttf */; };
+		1A5ADD53ACEC41AA86EE0B82 /* Tourney_Condensed-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1A53F189DD848F6BAE53FEF /* Tourney_Condensed-Italic.ttf */; };
+		AC75B65058164F99AAF87ED0 /* Tourney_Condensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C3E11D199294F5BA84B4D92 /* Tourney_Condensed-Light.ttf */; };
+		14322BB05736495581384BCE /* Tourney_Condensed-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 85172ED619EF4F20991D504F /* Tourney_Condensed-LightItalic.ttf */; };
+		A3B3A65D8E6F40AD8602561C /* Tourney_Condensed-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 853B0CF21ECF4685B0EF06F1 /* Tourney_Condensed-Medium.ttf */; };
+		90F882E8A7884AE3A573C0A6 /* Tourney_Condensed-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFBF7DECC62B44B1AB6931A7 /* Tourney_Condensed-MediumItalic.ttf */; };
+		B533D687BD3440D2AB097C7C /* Tourney_Condensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B2887539DC84FA798468FB8 /* Tourney_Condensed-Regular.ttf */; };
+		25F15A3742274FF9995F52A5 /* Tourney_Condensed-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28C4ECE835974029B9E2D7D7 /* Tourney_Condensed-SemiBold.ttf */; };
+		EBBD1919D4F84B25A945731A /* Tourney_Condensed-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BE24D6F9D2E455D97C07F88 /* Tourney_Condensed-SemiBoldItalic.ttf */; };
+		D358D3DDF610486D978BF2A3 /* Tourney_Condensed-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 22B9A9A3445D4BC1A5BFA729 /* Tourney_Condensed-Thin.ttf */; };
+		888AFDA9E9C64AF68250F145 /* Tourney_Condensed-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E387C2726604479F800FC75E /* Tourney_Condensed-ThinItalic.ttf */; };
+		420988917475408AB0E26CFE /* Tourney_Expanded-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6C55982070C74131B8544DF5 /* Tourney_Expanded-Black.ttf */; };
+		BD30EEC498D3437BA4162AF1 /* Tourney_Expanded-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A9CF44C7F124BBAA8B0871D /* Tourney_Expanded-BlackItalic.ttf */; };
+		17FFF483B45345CD9D7E3D41 /* Tourney_Expanded-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1836EFBE75B4F5A8938AC62 /* Tourney_Expanded-Bold.ttf */; };
+		5A86DF3697964F1093F92B9F /* Tourney_Expanded-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D09184774102402FB0517D05 /* Tourney_Expanded-BoldItalic.ttf */; };
+		EDD3F6218536466281606B4A /* Tourney_Expanded-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 199C60DFE6634DA9B7D27CD0 /* Tourney_Expanded-ExtraBold.ttf */; };
+		FE765BDDCA374E528E8AB879 /* Tourney_Expanded-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBD0FF87578645C0A5176895 /* Tourney_Expanded-ExtraBoldItalic.ttf */; };
+		72704C51FB2448D78BFD0CAD /* Tourney_Expanded-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF655C3E41C743CBB628DFE2 /* Tourney_Expanded-ExtraLight.ttf */; };
+		1BB1C9D2AFC841D289F57A6E /* Tourney_Expanded-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9D4AE3076E144776A7300E87 /* Tourney_Expanded-ExtraLightItalic.ttf */; };
+		4D22F6996C3F489588600AE1 /* Tourney_Expanded-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D441F11FC7FD4394A8F37ECB /* Tourney_Expanded-Italic.ttf */; };
+		4C923010629D4E7389041C85 /* Tourney_Expanded-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5AA9C1ED1BD5437EBAE07A1B /* Tourney_Expanded-Light.ttf */; };
+		CD8F70A3C870480FAFB5B6D9 /* Tourney_Expanded-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 293888FD8C044792BEBE9504 /* Tourney_Expanded-LightItalic.ttf */; };
+		AC8EB1AE90CA4EA6B1ED1AAB /* Tourney_Expanded-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D288441C13214805A998486F /* Tourney_Expanded-Medium.ttf */; };
+		F4B7A97ECAA74F99A85DDC53 /* Tourney_Expanded-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 070F6E48A401437A96C643E0 /* Tourney_Expanded-MediumItalic.ttf */; };
+		E79DF12C917A4458AC6A73FA /* Tourney_Expanded-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 284280DA50824048B9E1698F /* Tourney_Expanded-Regular.ttf */; };
+		07D3F4BC4C2B49ED819B6F79 /* Tourney_Expanded-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 422DA660E6654BCD81FB9AD4 /* Tourney_Expanded-SemiBold.ttf */; };
+		5C97B310DF53424DA0C8C126 /* Tourney_Expanded-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59BE4B58B64E4C32AF59A58B /* Tourney_Expanded-SemiBoldItalic.ttf */; };
+		E5DCAC8BD3384A60A4C54438 /* Tourney_Expanded-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6AE4962B6446469AA3C502CF /* Tourney_Expanded-Thin.ttf */; };
+		83485EE64181474594672DC9 /* Tourney_Expanded-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E0F6460013744857A23F22D3 /* Tourney_Expanded-ThinItalic.ttf */; };
+		4CF833F2B021481E936D5FDC /* Tourney_SemiCondensed-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845CCC95DFC5454CB2E294C0 /* Tourney_SemiCondensed-Black.ttf */; };
+		D129D20CF612481E87B02BED /* Tourney_SemiCondensed-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E0485DB7F2B64841A5431DA6 /* Tourney_SemiCondensed-BlackItalic.ttf */; };
+		B60E15ECB8D545B68AC932CC /* Tourney_SemiCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B51BC8771F95433795C32BE6 /* Tourney_SemiCondensed-Bold.ttf */; };
+		AC60FABDDBC34A90B699EAD4 /* Tourney_SemiCondensed-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A3A058CB732417C8112A626 /* Tourney_SemiCondensed-BoldItalic.ttf */; };
+		3262BF2BAB974682A4321BA9 /* Tourney_SemiCondensed-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7BD9665D95FB417CB5A528B3 /* Tourney_SemiCondensed-ExtraBold.ttf */; };
+		AE1308C235EC4FA3AF994C1C /* Tourney_SemiCondensed-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A76C527357ED4ECE9811168E /* Tourney_SemiCondensed-ExtraBoldItalic.ttf */; };
+		0B00ECD8D174491D9F6A65BB /* Tourney_SemiCondensed-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D9AA0C6F7EE4E89B143BE08 /* Tourney_SemiCondensed-ExtraLight.ttf */; };
+		CC61A29AFBB7416E935ADA04 /* Tourney_SemiCondensed-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B57B8DCAD464A1B81912CF7 /* Tourney_SemiCondensed-ExtraLightItalic.ttf */; };
+		ACA71FC63C46434CB52224B4 /* Tourney_SemiCondensed-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1EB036DA06D4479CAF4809FE /* Tourney_SemiCondensed-Italic.ttf */; };
+		3EE0E33C2A774F1E96A752F5 /* Tourney_SemiCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73777C786CC44A16A28A8CCC /* Tourney_SemiCondensed-Light.ttf */; };
+		AAA4152B97174630856B4678 /* Tourney_SemiCondensed-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8E21D09610D47519A673FA6 /* Tourney_SemiCondensed-LightItalic.ttf */; };
+		913FC5BA02E240F2B5468082 /* Tourney_SemiCondensed-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21ED53C69DA245E287E55771 /* Tourney_SemiCondensed-Medium.ttf */; };
+		18BB80610A4C48C1BC2E8B79 /* Tourney_SemiCondensed-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9084C52428FE45E088B073A4 /* Tourney_SemiCondensed-MediumItalic.ttf */; };
+		B76C248ED4E44625A6D5B2C5 /* Tourney_SemiCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6253865E59EF421BB6FE34D3 /* Tourney_SemiCondensed-Regular.ttf */; };
+		4110037F5A6541078C73B393 /* Tourney_SemiCondensed-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2416FE774E654AB8ACFDC387 /* Tourney_SemiCondensed-SemiBold.ttf */; };
+		49F7E222E72248E49D1699CA /* Tourney_SemiCondensed-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2E723D9C907404DB7F4A94A /* Tourney_SemiCondensed-SemiBoldItalic.ttf */; };
+		205619031B474761BF24785E /* Tourney_SemiCondensed-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 263867F6920140799D36746C /* Tourney_SemiCondensed-Thin.ttf */; };
+		4BEA23B0F7574B7EAD401E0B /* Tourney_SemiCondensed-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59029D88554F46A4B281483F /* Tourney_SemiCondensed-ThinItalic.ttf */; };
+		95062F90F7674D37B670F2C3 /* Tourney_SemiExpanded-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 989E55107D524EC488862430 /* Tourney_SemiExpanded-Black.ttf */; };
+		6055CCA3177247DB989BD6BD /* Tourney_SemiExpanded-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9AE6335B590E49D097C37B2D /* Tourney_SemiExpanded-BlackItalic.ttf */; };
+		A9E4FC4217544F12B210F6D2 /* Tourney_SemiExpanded-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1AB15EB6B4C4205A026D1DF /* Tourney_SemiExpanded-Bold.ttf */; };
+		FEB7BF39631247E0979C6F39 /* Tourney_SemiExpanded-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1AB3EBC43AA4661BE62A481 /* Tourney_SemiExpanded-BoldItalic.ttf */; };
+		CA2DBB1FBD8347C8839D86AA /* Tourney_SemiExpanded-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0C5E9C420CA64ED6A9A037E8 /* Tourney_SemiExpanded-ExtraBold.ttf */; };
+		3172523BDE4446DCBB46843C /* Tourney_SemiExpanded-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E38E495890B4A3D829C1D73 /* Tourney_SemiExpanded-ExtraBoldItalic.ttf */; };
+		9762B201AE214FB8916CC3A6 /* Tourney_SemiExpanded-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEC40117FFAD4073BFAC49D8 /* Tourney_SemiExpanded-ExtraLight.ttf */; };
+		88C4FC14E25F45F485F100AB /* Tourney_SemiExpanded-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB092F26B7BD4E7383267AC1 /* Tourney_SemiExpanded-ExtraLightItalic.ttf */; };
+		AB515FE241B247E9B0BB670F /* Tourney_SemiExpanded-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DD2ABF4F55C4991A66DB576 /* Tourney_SemiExpanded-Italic.ttf */; };
+		1BF33476C5B2441AB207A9DA /* Tourney_SemiExpanded-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF5A643C31B344BD97D89FE6 /* Tourney_SemiExpanded-Light.ttf */; };
+		FFED7B9F1A6448639345AEC2 /* Tourney_SemiExpanded-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7CD9D613CBB4326BBA33F95 /* Tourney_SemiExpanded-LightItalic.ttf */; };
+		9C0EF283046448A6A6128BEB /* Tourney_SemiExpanded-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5FDD121E28D4F578A4A390D /* Tourney_SemiExpanded-Medium.ttf */; };
+		CB9E5D2984854D7D9DC0F135 /* Tourney_SemiExpanded-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 46D0A5B01AE3439887A0C567 /* Tourney_SemiExpanded-MediumItalic.ttf */; };
+		1C36AE4D6F384986839C49E5 /* Tourney_SemiExpanded-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25EDE33FEE344B6AA8D99A65 /* Tourney_SemiExpanded-Regular.ttf */; };
+		B11B4F27B81B4C5A919B97E9 /* Tourney_SemiExpanded-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDC54711B85A424798AF05D8 /* Tourney_SemiExpanded-SemiBold.ttf */; };
+		1268592D1EDE434FA802FD5D /* Tourney_SemiExpanded-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 230CA10954AD4E1AB7EBA5F2 /* Tourney_SemiExpanded-SemiBoldItalic.ttf */; };
+		0B7BD35EBB024F6A97EEA001 /* Tourney_SemiExpanded-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14AEFCFCB5D7440F8272CB24 /* Tourney_SemiExpanded-Thin.ttf */; };
+		EABFD9D51F484EB098EF5336 /* Tourney_SemiExpanded-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4B232A6494B46A398E607CF /* Tourney_SemiExpanded-ThinItalic.ttf */; };
+		9B710D35651D4903AAEE7DF8 /* Tourney-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32C61BA49F5A4F0186C6D349 /* Tourney-Black.ttf */; };
+		540992A4F39446DA94BFD6F9 /* Tourney-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F56EB4AF93F045E6BD7B5328 /* Tourney-BlackItalic.ttf */; };
+		9187DA3B29B041F2A0E39964 /* Tourney-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0E4DE5932D24940A65152FA /* Tourney-Bold.ttf */; };
+		E98C7202DD8C48E5AD24A029 /* Tourney-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF196080F02B4A399EB2A755 /* Tourney-BoldItalic.ttf */; };
+		0DAD5EFF4F9449D49E33DE24 /* Tourney-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A20839B4A8C4C0884DDE4A6 /* Tourney-ExtraBold.ttf */; };
+		8E990227794E4A75ABF5C5EE /* Tourney-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC89107400A74E9580A130BF /* Tourney-ExtraBoldItalic.ttf */; };
+		62866CCC9C2E43E3A3AA4719 /* Tourney-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 486D268A571248F19EEE56E6 /* Tourney-ExtraLight.ttf */; };
+		74EE463C64AD4DC8A595F630 /* Tourney-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E9950BF9F314B89B4CFC959 /* Tourney-ExtraLightItalic.ttf */; };
+		13F551AF6B7E492E8F82581A /* Tourney-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A193E05B32F46D5B042E85F /* Tourney-Italic.ttf */; };
+		A96DE3EB261D4ED1BCC3D30B /* Tourney-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7808598218E4C9BBEF91A63 /* Tourney-Light.ttf */; };
+		7092C44AC7834C74A248DEA2 /* Tourney-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28A5C2746CA44A979EAF1B8C /* Tourney-LightItalic.ttf */; };
+		3C5C49BA0D6745D5AABA2F5C /* Tourney-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52EA9052155C434EB3FBBECB /* Tourney-Medium.ttf */; };
+		3D072FCE58D3443595B0E85D /* Tourney-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E08E8FD6194E444E8F6EC6ED /* Tourney-MediumItalic.ttf */; };
+		A76B9FCC70324D14A888FA3A /* Tourney-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A02CA7B60BB3429C9F1BEA25 /* Tourney-Regular.ttf */; };
+		D76FB82506834439BB50CA86 /* Tourney-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5016E6A500E47DAAA9565DC /* Tourney-SemiBold.ttf */; };
+		49A61DBF7E94457588BAF002 /* Tourney-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF027EBF92B748BA8B7EFB48 /* Tourney-SemiBoldItalic.ttf */; };
+		746275F46A9349C99D516742 /* Tourney-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3626F42EB09F4E2EB357271E /* Tourney-Thin.ttf */; };
+		0AA5F58A3F4340B1BD5FB851 /* Tourney-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76AFC7569EDE4EC18ED88F9A /* Tourney-ThinItalic.ttf */; };
+		93C9D85710A3442080376BEF /* Tourney-Italic-VariableFont_wdth,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F35BF8D78FC4A958DCE39F9 /* Tourney-Italic-VariableFont_wdth,wght.ttf */; };
+		FF3F2836C1724FE1B8D7F79B /* Tourney-VariableFont_wdth,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C0D667385384B31A1720B77 /* Tourney-VariableFont_wdth,wght.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
+			remoteInfo = JCWM17;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00E356EE1AD99517003FC87E /* JCWM17Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JCWM17Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* JCWM17Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCWM17Tests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* JCWM17.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JCWM17.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = JCWM17/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = JCWM17/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = JCWM17/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = JCWM17/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = JCWM17/main.m; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = JCWM17/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		925F852E46ED4376B6D6F80A /* AveriaSansLibre-Bold.ttf */ = {isa = PBXFileReference; name = "AveriaSansLibre-Bold.ttf"; path = "../android/src/assets/fonts/AveriaSansLibre-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		39A5B6C972E745B2B5D8832D /* AveriaSansLibre-BoldItalic.ttf */ = {isa = PBXFileReference; name = "AveriaSansLibre-BoldItalic.ttf"; path = "../android/src/assets/fonts/AveriaSansLibre-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D5B47F35987747C988FC3AD6 /* AveriaSansLibre-Italic.ttf */ = {isa = PBXFileReference; name = "AveriaSansLibre-Italic.ttf"; path = "../android/src/assets/fonts/AveriaSansLibre-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E9EA77FDFC774C5C80A92EAB /* AveriaSansLibre-Light.ttf */ = {isa = PBXFileReference; name = "AveriaSansLibre-Light.ttf"; path = "../android/src/assets/fonts/AveriaSansLibre-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4B2A43EB7562439DBA2D942D /* AveriaSansLibre-LightItalic.ttf */ = {isa = PBXFileReference; name = "AveriaSansLibre-LightItalic.ttf"; path = "../android/src/assets/fonts/AveriaSansLibre-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		320D9F6D9D5E452C98528A71 /* AveriaSansLibre-Regular.ttf */ = {isa = PBXFileReference; name = "AveriaSansLibre-Regular.ttf"; path = "../android/src/assets/fonts/AveriaSansLibre-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		68BD2877CAED41A08DCD4AF9 /* Tourney_Condensed-Black.ttf */ = {isa = PBXFileReference; name = "Tourney_Condensed-Black.ttf"; path = "../android/src/assets/fonts/static/Tourney_Condensed/Tourney_Condensed-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5ECFA8FFC7FB45A7B18AA1A2 /* Tourney_Condensed-BlackItalic.ttf */ = {isa = PBXFileReference; name = "Tourney_Condensed-BlackItalic.ttf"; path = "../android/src/assets/fonts/static/Tourney_Condensed/Tourney_Condensed-BlackItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0E325F6B37C14D99A2DBDE48 /* Tourney_Condensed-Bold.ttf */ = {isa = PBXFileReference; name = "Tourney_Condensed-Bold.ttf"; path = "../android/src/assets/fonts/static/Tourney_Condensed/Tourney_Condensed-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FD3EB554B4524E0098F01A87 /* Tourney_Condensed-BoldItalic.ttf */ = {isa = PBXFileReference; name = "Tourney_Condensed-BoldItalic.ttf"; path = "../android/src/assets/fonts/static/Tourney_Condensed/Tourney_Condensed-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		051A882AAE8D4F2CA79346B2 /* Tourney_Condensed-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Tourney_Condensed-ExtraBold.ttf"; path = "../android/src/assets/fonts/static/Tourney_Condensed/Tourney_Condensed-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0E4D38377245437D9DDC12CD /* Tourney_Condensed-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; name = "Tourney_Condensed-ExtraBoldItalic.ttf"; path = "../android/src/assets/fonts/static/Tourney_Condensed/Tourney_Condensed-ExtraBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0ABD584D7FD94F4EBA16F545 /* Tourney_Condensed-ExtraLight.ttf */ = {isa = PBXFileReference; name = "Tourney_Condensed-ExtraLight.ttf"; path = "../android/src/assets/fonts/static/Tourney_Condensed/Tourney_Condensed-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F88A8091EF1A46B489E74C81 /* Tourney_Condensed-ExtraLightItalic.ttf */ = {isa = PBXFileReference; name = "Tourney_Condensed-ExtraLightItalic.ttf"; path = "../android/src/assets/fonts/static/Tourney_Condensed/Tourney_Condensed-ExtraLightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C1A53F189DD848F6BAE53FEF /* Tourney_Condensed-Italic.ttf */ = {isa = PBXFileReference; name = "Tourney_Condensed-Italic.ttf"; path = "../android/src/assets/fonts/static/Tourney_Condensed/Tourney_Condensed-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9C3E11D199294F5BA84B4D92 /* Tourney_Condensed-Light.ttf */ = {isa = PBXFileReference; name = "Tourney_Condensed-Light.ttf"; path = "../android/src/assets/fonts/static/Tourney_Condensed/Tourney_Condensed-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		85172ED619EF4F20991D504F /* Tourney_Condensed-LightItalic.ttf */ = {isa = PBXFileReference; name = "Tourney_Condensed-LightItalic.ttf"; path = "../android/src/assets/fonts/static/Tourney_Condensed/Tourney_Condensed-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		853B0CF21ECF4685B0EF06F1 /* Tourney_Condensed-Medium.ttf */ = {isa = PBXFileReference; name = "Tourney_Condensed-Medium.ttf"; path = "../android/src/assets/fonts/static/Tourney_Condensed/Tourney_Condensed-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EFBF7DECC62B44B1AB6931A7 /* Tourney_Condensed-MediumItalic.ttf */ = {isa = PBXFileReference; name = "Tourney_Condensed-MediumItalic.ttf"; path = "../android/src/assets/fonts/static/Tourney_Condensed/Tourney_Condensed-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4B2887539DC84FA798468FB8 /* Tourney_Condensed-Regular.ttf */ = {isa = PBXFileReference; name = "Tourney_Condensed-Regular.ttf"; path = "../android/src/assets/fonts/static/Tourney_Condensed/Tourney_Condensed-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		28C4ECE835974029B9E2D7D7 /* Tourney_Condensed-SemiBold.ttf */ = {isa = PBXFileReference; name = "Tourney_Condensed-SemiBold.ttf"; path = "../android/src/assets/fonts/static/Tourney_Condensed/Tourney_Condensed-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8BE24D6F9D2E455D97C07F88 /* Tourney_Condensed-SemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "Tourney_Condensed-SemiBoldItalic.ttf"; path = "../android/src/assets/fonts/static/Tourney_Condensed/Tourney_Condensed-SemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		22B9A9A3445D4BC1A5BFA729 /* Tourney_Condensed-Thin.ttf */ = {isa = PBXFileReference; name = "Tourney_Condensed-Thin.ttf"; path = "../android/src/assets/fonts/static/Tourney_Condensed/Tourney_Condensed-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E387C2726604479F800FC75E /* Tourney_Condensed-ThinItalic.ttf */ = {isa = PBXFileReference; name = "Tourney_Condensed-ThinItalic.ttf"; path = "../android/src/assets/fonts/static/Tourney_Condensed/Tourney_Condensed-ThinItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6C55982070C74131B8544DF5 /* Tourney_Expanded-Black.ttf */ = {isa = PBXFileReference; name = "Tourney_Expanded-Black.ttf"; path = "../android/src/assets/fonts/static/Tourney_Expanded/Tourney_Expanded-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1A9CF44C7F124BBAA8B0871D /* Tourney_Expanded-BlackItalic.ttf */ = {isa = PBXFileReference; name = "Tourney_Expanded-BlackItalic.ttf"; path = "../android/src/assets/fonts/static/Tourney_Expanded/Tourney_Expanded-BlackItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A1836EFBE75B4F5A8938AC62 /* Tourney_Expanded-Bold.ttf */ = {isa = PBXFileReference; name = "Tourney_Expanded-Bold.ttf"; path = "../android/src/assets/fonts/static/Tourney_Expanded/Tourney_Expanded-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D09184774102402FB0517D05 /* Tourney_Expanded-BoldItalic.ttf */ = {isa = PBXFileReference; name = "Tourney_Expanded-BoldItalic.ttf"; path = "../android/src/assets/fonts/static/Tourney_Expanded/Tourney_Expanded-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		199C60DFE6634DA9B7D27CD0 /* Tourney_Expanded-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Tourney_Expanded-ExtraBold.ttf"; path = "../android/src/assets/fonts/static/Tourney_Expanded/Tourney_Expanded-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EBD0FF87578645C0A5176895 /* Tourney_Expanded-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; name = "Tourney_Expanded-ExtraBoldItalic.ttf"; path = "../android/src/assets/fonts/static/Tourney_Expanded/Tourney_Expanded-ExtraBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BF655C3E41C743CBB628DFE2 /* Tourney_Expanded-ExtraLight.ttf */ = {isa = PBXFileReference; name = "Tourney_Expanded-ExtraLight.ttf"; path = "../android/src/assets/fonts/static/Tourney_Expanded/Tourney_Expanded-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9D4AE3076E144776A7300E87 /* Tourney_Expanded-ExtraLightItalic.ttf */ = {isa = PBXFileReference; name = "Tourney_Expanded-ExtraLightItalic.ttf"; path = "../android/src/assets/fonts/static/Tourney_Expanded/Tourney_Expanded-ExtraLightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D441F11FC7FD4394A8F37ECB /* Tourney_Expanded-Italic.ttf */ = {isa = PBXFileReference; name = "Tourney_Expanded-Italic.ttf"; path = "../android/src/assets/fonts/static/Tourney_Expanded/Tourney_Expanded-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5AA9C1ED1BD5437EBAE07A1B /* Tourney_Expanded-Light.ttf */ = {isa = PBXFileReference; name = "Tourney_Expanded-Light.ttf"; path = "../android/src/assets/fonts/static/Tourney_Expanded/Tourney_Expanded-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		293888FD8C044792BEBE9504 /* Tourney_Expanded-LightItalic.ttf */ = {isa = PBXFileReference; name = "Tourney_Expanded-LightItalic.ttf"; path = "../android/src/assets/fonts/static/Tourney_Expanded/Tourney_Expanded-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D288441C13214805A998486F /* Tourney_Expanded-Medium.ttf */ = {isa = PBXFileReference; name = "Tourney_Expanded-Medium.ttf"; path = "../android/src/assets/fonts/static/Tourney_Expanded/Tourney_Expanded-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		070F6E48A401437A96C643E0 /* Tourney_Expanded-MediumItalic.ttf */ = {isa = PBXFileReference; name = "Tourney_Expanded-MediumItalic.ttf"; path = "../android/src/assets/fonts/static/Tourney_Expanded/Tourney_Expanded-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		284280DA50824048B9E1698F /* Tourney_Expanded-Regular.ttf */ = {isa = PBXFileReference; name = "Tourney_Expanded-Regular.ttf"; path = "../android/src/assets/fonts/static/Tourney_Expanded/Tourney_Expanded-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		422DA660E6654BCD81FB9AD4 /* Tourney_Expanded-SemiBold.ttf */ = {isa = PBXFileReference; name = "Tourney_Expanded-SemiBold.ttf"; path = "../android/src/assets/fonts/static/Tourney_Expanded/Tourney_Expanded-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		59BE4B58B64E4C32AF59A58B /* Tourney_Expanded-SemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "Tourney_Expanded-SemiBoldItalic.ttf"; path = "../android/src/assets/fonts/static/Tourney_Expanded/Tourney_Expanded-SemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6AE4962B6446469AA3C502CF /* Tourney_Expanded-Thin.ttf */ = {isa = PBXFileReference; name = "Tourney_Expanded-Thin.ttf"; path = "../android/src/assets/fonts/static/Tourney_Expanded/Tourney_Expanded-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E0F6460013744857A23F22D3 /* Tourney_Expanded-ThinItalic.ttf */ = {isa = PBXFileReference; name = "Tourney_Expanded-ThinItalic.ttf"; path = "../android/src/assets/fonts/static/Tourney_Expanded/Tourney_Expanded-ThinItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		845CCC95DFC5454CB2E294C0 /* Tourney_SemiCondensed-Black.ttf */ = {isa = PBXFileReference; name = "Tourney_SemiCondensed-Black.ttf"; path = "../android/src/assets/fonts/static/Tourney_SemiCondensed/Tourney_SemiCondensed-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E0485DB7F2B64841A5431DA6 /* Tourney_SemiCondensed-BlackItalic.ttf */ = {isa = PBXFileReference; name = "Tourney_SemiCondensed-BlackItalic.ttf"; path = "../android/src/assets/fonts/static/Tourney_SemiCondensed/Tourney_SemiCondensed-BlackItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B51BC8771F95433795C32BE6 /* Tourney_SemiCondensed-Bold.ttf */ = {isa = PBXFileReference; name = "Tourney_SemiCondensed-Bold.ttf"; path = "../android/src/assets/fonts/static/Tourney_SemiCondensed/Tourney_SemiCondensed-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8A3A058CB732417C8112A626 /* Tourney_SemiCondensed-BoldItalic.ttf */ = {isa = PBXFileReference; name = "Tourney_SemiCondensed-BoldItalic.ttf"; path = "../android/src/assets/fonts/static/Tourney_SemiCondensed/Tourney_SemiCondensed-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7BD9665D95FB417CB5A528B3 /* Tourney_SemiCondensed-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Tourney_SemiCondensed-ExtraBold.ttf"; path = "../android/src/assets/fonts/static/Tourney_SemiCondensed/Tourney_SemiCondensed-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A76C527357ED4ECE9811168E /* Tourney_SemiCondensed-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; name = "Tourney_SemiCondensed-ExtraBoldItalic.ttf"; path = "../android/src/assets/fonts/static/Tourney_SemiCondensed/Tourney_SemiCondensed-ExtraBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3D9AA0C6F7EE4E89B143BE08 /* Tourney_SemiCondensed-ExtraLight.ttf */ = {isa = PBXFileReference; name = "Tourney_SemiCondensed-ExtraLight.ttf"; path = "../android/src/assets/fonts/static/Tourney_SemiCondensed/Tourney_SemiCondensed-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1B57B8DCAD464A1B81912CF7 /* Tourney_SemiCondensed-ExtraLightItalic.ttf */ = {isa = PBXFileReference; name = "Tourney_SemiCondensed-ExtraLightItalic.ttf"; path = "../android/src/assets/fonts/static/Tourney_SemiCondensed/Tourney_SemiCondensed-ExtraLightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1EB036DA06D4479CAF4809FE /* Tourney_SemiCondensed-Italic.ttf */ = {isa = PBXFileReference; name = "Tourney_SemiCondensed-Italic.ttf"; path = "../android/src/assets/fonts/static/Tourney_SemiCondensed/Tourney_SemiCondensed-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		73777C786CC44A16A28A8CCC /* Tourney_SemiCondensed-Light.ttf */ = {isa = PBXFileReference; name = "Tourney_SemiCondensed-Light.ttf"; path = "../android/src/assets/fonts/static/Tourney_SemiCondensed/Tourney_SemiCondensed-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F8E21D09610D47519A673FA6 /* Tourney_SemiCondensed-LightItalic.ttf */ = {isa = PBXFileReference; name = "Tourney_SemiCondensed-LightItalic.ttf"; path = "../android/src/assets/fonts/static/Tourney_SemiCondensed/Tourney_SemiCondensed-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		21ED53C69DA245E287E55771 /* Tourney_SemiCondensed-Medium.ttf */ = {isa = PBXFileReference; name = "Tourney_SemiCondensed-Medium.ttf"; path = "../android/src/assets/fonts/static/Tourney_SemiCondensed/Tourney_SemiCondensed-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9084C52428FE45E088B073A4 /* Tourney_SemiCondensed-MediumItalic.ttf */ = {isa = PBXFileReference; name = "Tourney_SemiCondensed-MediumItalic.ttf"; path = "../android/src/assets/fonts/static/Tourney_SemiCondensed/Tourney_SemiCondensed-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6253865E59EF421BB6FE34D3 /* Tourney_SemiCondensed-Regular.ttf */ = {isa = PBXFileReference; name = "Tourney_SemiCondensed-Regular.ttf"; path = "../android/src/assets/fonts/static/Tourney_SemiCondensed/Tourney_SemiCondensed-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2416FE774E654AB8ACFDC387 /* Tourney_SemiCondensed-SemiBold.ttf */ = {isa = PBXFileReference; name = "Tourney_SemiCondensed-SemiBold.ttf"; path = "../android/src/assets/fonts/static/Tourney_SemiCondensed/Tourney_SemiCondensed-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E2E723D9C907404DB7F4A94A /* Tourney_SemiCondensed-SemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "Tourney_SemiCondensed-SemiBoldItalic.ttf"; path = "../android/src/assets/fonts/static/Tourney_SemiCondensed/Tourney_SemiCondensed-SemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		263867F6920140799D36746C /* Tourney_SemiCondensed-Thin.ttf */ = {isa = PBXFileReference; name = "Tourney_SemiCondensed-Thin.ttf"; path = "../android/src/assets/fonts/static/Tourney_SemiCondensed/Tourney_SemiCondensed-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		59029D88554F46A4B281483F /* Tourney_SemiCondensed-ThinItalic.ttf */ = {isa = PBXFileReference; name = "Tourney_SemiCondensed-ThinItalic.ttf"; path = "../android/src/assets/fonts/static/Tourney_SemiCondensed/Tourney_SemiCondensed-ThinItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		989E55107D524EC488862430 /* Tourney_SemiExpanded-Black.ttf */ = {isa = PBXFileReference; name = "Tourney_SemiExpanded-Black.ttf"; path = "../android/src/assets/fonts/static/Tourney_SemiExpanded/Tourney_SemiExpanded-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9AE6335B590E49D097C37B2D /* Tourney_SemiExpanded-BlackItalic.ttf */ = {isa = PBXFileReference; name = "Tourney_SemiExpanded-BlackItalic.ttf"; path = "../android/src/assets/fonts/static/Tourney_SemiExpanded/Tourney_SemiExpanded-BlackItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E1AB15EB6B4C4205A026D1DF /* Tourney_SemiExpanded-Bold.ttf */ = {isa = PBXFileReference; name = "Tourney_SemiExpanded-Bold.ttf"; path = "../android/src/assets/fonts/static/Tourney_SemiExpanded/Tourney_SemiExpanded-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E1AB3EBC43AA4661BE62A481 /* Tourney_SemiExpanded-BoldItalic.ttf */ = {isa = PBXFileReference; name = "Tourney_SemiExpanded-BoldItalic.ttf"; path = "../android/src/assets/fonts/static/Tourney_SemiExpanded/Tourney_SemiExpanded-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0C5E9C420CA64ED6A9A037E8 /* Tourney_SemiExpanded-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Tourney_SemiExpanded-ExtraBold.ttf"; path = "../android/src/assets/fonts/static/Tourney_SemiExpanded/Tourney_SemiExpanded-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8E38E495890B4A3D829C1D73 /* Tourney_SemiExpanded-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; name = "Tourney_SemiExpanded-ExtraBoldItalic.ttf"; path = "../android/src/assets/fonts/static/Tourney_SemiExpanded/Tourney_SemiExpanded-ExtraBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BEC40117FFAD4073BFAC49D8 /* Tourney_SemiExpanded-ExtraLight.ttf */ = {isa = PBXFileReference; name = "Tourney_SemiExpanded-ExtraLight.ttf"; path = "../android/src/assets/fonts/static/Tourney_SemiExpanded/Tourney_SemiExpanded-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CB092F26B7BD4E7383267AC1 /* Tourney_SemiExpanded-ExtraLightItalic.ttf */ = {isa = PBXFileReference; name = "Tourney_SemiExpanded-ExtraLightItalic.ttf"; path = "../android/src/assets/fonts/static/Tourney_SemiExpanded/Tourney_SemiExpanded-ExtraLightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1DD2ABF4F55C4991A66DB576 /* Tourney_SemiExpanded-Italic.ttf */ = {isa = PBXFileReference; name = "Tourney_SemiExpanded-Italic.ttf"; path = "../android/src/assets/fonts/static/Tourney_SemiExpanded/Tourney_SemiExpanded-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EF5A643C31B344BD97D89FE6 /* Tourney_SemiExpanded-Light.ttf */ = {isa = PBXFileReference; name = "Tourney_SemiExpanded-Light.ttf"; path = "../android/src/assets/fonts/static/Tourney_SemiExpanded/Tourney_SemiExpanded-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A7CD9D613CBB4326BBA33F95 /* Tourney_SemiExpanded-LightItalic.ttf */ = {isa = PBXFileReference; name = "Tourney_SemiExpanded-LightItalic.ttf"; path = "../android/src/assets/fonts/static/Tourney_SemiExpanded/Tourney_SemiExpanded-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D5FDD121E28D4F578A4A390D /* Tourney_SemiExpanded-Medium.ttf */ = {isa = PBXFileReference; name = "Tourney_SemiExpanded-Medium.ttf"; path = "../android/src/assets/fonts/static/Tourney_SemiExpanded/Tourney_SemiExpanded-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		46D0A5B01AE3439887A0C567 /* Tourney_SemiExpanded-MediumItalic.ttf */ = {isa = PBXFileReference; name = "Tourney_SemiExpanded-MediumItalic.ttf"; path = "../android/src/assets/fonts/static/Tourney_SemiExpanded/Tourney_SemiExpanded-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		25EDE33FEE344B6AA8D99A65 /* Tourney_SemiExpanded-Regular.ttf */ = {isa = PBXFileReference; name = "Tourney_SemiExpanded-Regular.ttf"; path = "../android/src/assets/fonts/static/Tourney_SemiExpanded/Tourney_SemiExpanded-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EDC54711B85A424798AF05D8 /* Tourney_SemiExpanded-SemiBold.ttf */ = {isa = PBXFileReference; name = "Tourney_SemiExpanded-SemiBold.ttf"; path = "../android/src/assets/fonts/static/Tourney_SemiExpanded/Tourney_SemiExpanded-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		230CA10954AD4E1AB7EBA5F2 /* Tourney_SemiExpanded-SemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "Tourney_SemiExpanded-SemiBoldItalic.ttf"; path = "../android/src/assets/fonts/static/Tourney_SemiExpanded/Tourney_SemiExpanded-SemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		14AEFCFCB5D7440F8272CB24 /* Tourney_SemiExpanded-Thin.ttf */ = {isa = PBXFileReference; name = "Tourney_SemiExpanded-Thin.ttf"; path = "../android/src/assets/fonts/static/Tourney_SemiExpanded/Tourney_SemiExpanded-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C4B232A6494B46A398E607CF /* Tourney_SemiExpanded-ThinItalic.ttf */ = {isa = PBXFileReference; name = "Tourney_SemiExpanded-ThinItalic.ttf"; path = "../android/src/assets/fonts/static/Tourney_SemiExpanded/Tourney_SemiExpanded-ThinItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		32C61BA49F5A4F0186C6D349 /* Tourney-Black.ttf */ = {isa = PBXFileReference; name = "Tourney-Black.ttf"; path = "../android/src/assets/fonts/static/Tourney/Tourney-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F56EB4AF93F045E6BD7B5328 /* Tourney-BlackItalic.ttf */ = {isa = PBXFileReference; name = "Tourney-BlackItalic.ttf"; path = "../android/src/assets/fonts/static/Tourney/Tourney-BlackItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A0E4DE5932D24940A65152FA /* Tourney-Bold.ttf */ = {isa = PBXFileReference; name = "Tourney-Bold.ttf"; path = "../android/src/assets/fonts/static/Tourney/Tourney-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BF196080F02B4A399EB2A755 /* Tourney-BoldItalic.ttf */ = {isa = PBXFileReference; name = "Tourney-BoldItalic.ttf"; path = "../android/src/assets/fonts/static/Tourney/Tourney-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3A20839B4A8C4C0884DDE4A6 /* Tourney-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Tourney-ExtraBold.ttf"; path = "../android/src/assets/fonts/static/Tourney/Tourney-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DC89107400A74E9580A130BF /* Tourney-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; name = "Tourney-ExtraBoldItalic.ttf"; path = "../android/src/assets/fonts/static/Tourney/Tourney-ExtraBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		486D268A571248F19EEE56E6 /* Tourney-ExtraLight.ttf */ = {isa = PBXFileReference; name = "Tourney-ExtraLight.ttf"; path = "../android/src/assets/fonts/static/Tourney/Tourney-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0E9950BF9F314B89B4CFC959 /* Tourney-ExtraLightItalic.ttf */ = {isa = PBXFileReference; name = "Tourney-ExtraLightItalic.ttf"; path = "../android/src/assets/fonts/static/Tourney/Tourney-ExtraLightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8A193E05B32F46D5B042E85F /* Tourney-Italic.ttf */ = {isa = PBXFileReference; name = "Tourney-Italic.ttf"; path = "../android/src/assets/fonts/static/Tourney/Tourney-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C7808598218E4C9BBEF91A63 /* Tourney-Light.ttf */ = {isa = PBXFileReference; name = "Tourney-Light.ttf"; path = "../android/src/assets/fonts/static/Tourney/Tourney-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		28A5C2746CA44A979EAF1B8C /* Tourney-LightItalic.ttf */ = {isa = PBXFileReference; name = "Tourney-LightItalic.ttf"; path = "../android/src/assets/fonts/static/Tourney/Tourney-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		52EA9052155C434EB3FBBECB /* Tourney-Medium.ttf */ = {isa = PBXFileReference; name = "Tourney-Medium.ttf"; path = "../android/src/assets/fonts/static/Tourney/Tourney-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E08E8FD6194E444E8F6EC6ED /* Tourney-MediumItalic.ttf */ = {isa = PBXFileReference; name = "Tourney-MediumItalic.ttf"; path = "../android/src/assets/fonts/static/Tourney/Tourney-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A02CA7B60BB3429C9F1BEA25 /* Tourney-Regular.ttf */ = {isa = PBXFileReference; name = "Tourney-Regular.ttf"; path = "../android/src/assets/fonts/static/Tourney/Tourney-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E5016E6A500E47DAAA9565DC /* Tourney-SemiBold.ttf */ = {isa = PBXFileReference; name = "Tourney-SemiBold.ttf"; path = "../android/src/assets/fonts/static/Tourney/Tourney-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EF027EBF92B748BA8B7EFB48 /* Tourney-SemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "Tourney-SemiBoldItalic.ttf"; path = "../android/src/assets/fonts/static/Tourney/Tourney-SemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3626F42EB09F4E2EB357271E /* Tourney-Thin.ttf */ = {isa = PBXFileReference; name = "Tourney-Thin.ttf"; path = "../android/src/assets/fonts/static/Tourney/Tourney-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		76AFC7569EDE4EC18ED88F9A /* Tourney-ThinItalic.ttf */ = {isa = PBXFileReference; name = "Tourney-ThinItalic.ttf"; path = "../android/src/assets/fonts/static/Tourney/Tourney-ThinItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5F35BF8D78FC4A958DCE39F9 /* Tourney-Italic-VariableFont_wdth,wght.ttf */ = {isa = PBXFileReference; name = "Tourney-Italic-VariableFont_wdth,wght.ttf"; path = "../android/src/assets/fonts/Tourney-Italic-VariableFont_wdth,wght.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8C0D667385384B31A1720B77 /* Tourney-VariableFont_wdth,wght.ttf */ = {isa = PBXFileReference; name = "Tourney-VariableFont_wdth,wght.ttf"; path = "../android/src/assets/fonts/Tourney-VariableFont_wdth,wght.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00E356EB1AD99517003FC87E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00E356EF1AD99517003FC87E /* JCWM17Tests */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F21AD99517003FC87E /* JCWM17Tests.m */,
+				00E356F01AD99517003FC87E /* Supporting Files */,
+			);
+			path = JCWM17Tests;
+			sourceTree = "<group>";
+		};
+		00E356F01AD99517003FC87E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F11AD99517003FC87E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13B07FAE1A68108700A75B9A /* JCWM17 */ = {
+			isa = PBXGroup;
+			children = (
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.m */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
+				13B07FB71A68108700A75B9A /* main.m */,
+			);
+			name = JCWM17;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				13B07FAE1A68108700A75B9A /* JCWM17 */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				00E356EF1AD99517003FC87E /* JCWM17Tests */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				48C6EFAF0B5044D0BB7BE21F /* Resources */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* JCWM17.app */,
+				00E356EE1AD99517003FC87E /* JCWM17Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48C6EFAF0B5044D0BB7BE21F /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				925F852E46ED4376B6D6F80A /* AveriaSansLibre-Bold.ttf */,
+				39A5B6C972E745B2B5D8832D /* AveriaSansLibre-BoldItalic.ttf */,
+				D5B47F35987747C988FC3AD6 /* AveriaSansLibre-Italic.ttf */,
+				E9EA77FDFC774C5C80A92EAB /* AveriaSansLibre-Light.ttf */,
+				4B2A43EB7562439DBA2D942D /* AveriaSansLibre-LightItalic.ttf */,
+				320D9F6D9D5E452C98528A71 /* AveriaSansLibre-Regular.ttf */,
+				68BD2877CAED41A08DCD4AF9 /* Tourney_Condensed-Black.ttf */,
+				5ECFA8FFC7FB45A7B18AA1A2 /* Tourney_Condensed-BlackItalic.ttf */,
+				0E325F6B37C14D99A2DBDE48 /* Tourney_Condensed-Bold.ttf */,
+				FD3EB554B4524E0098F01A87 /* Tourney_Condensed-BoldItalic.ttf */,
+				051A882AAE8D4F2CA79346B2 /* Tourney_Condensed-ExtraBold.ttf */,
+				0E4D38377245437D9DDC12CD /* Tourney_Condensed-ExtraBoldItalic.ttf */,
+				0ABD584D7FD94F4EBA16F545 /* Tourney_Condensed-ExtraLight.ttf */,
+				F88A8091EF1A46B489E74C81 /* Tourney_Condensed-ExtraLightItalic.ttf */,
+				C1A53F189DD848F6BAE53FEF /* Tourney_Condensed-Italic.ttf */,
+				9C3E11D199294F5BA84B4D92 /* Tourney_Condensed-Light.ttf */,
+				85172ED619EF4F20991D504F /* Tourney_Condensed-LightItalic.ttf */,
+				853B0CF21ECF4685B0EF06F1 /* Tourney_Condensed-Medium.ttf */,
+				EFBF7DECC62B44B1AB6931A7 /* Tourney_Condensed-MediumItalic.ttf */,
+				4B2887539DC84FA798468FB8 /* Tourney_Condensed-Regular.ttf */,
+				28C4ECE835974029B9E2D7D7 /* Tourney_Condensed-SemiBold.ttf */,
+				8BE24D6F9D2E455D97C07F88 /* Tourney_Condensed-SemiBoldItalic.ttf */,
+				22B9A9A3445D4BC1A5BFA729 /* Tourney_Condensed-Thin.ttf */,
+				E387C2726604479F800FC75E /* Tourney_Condensed-ThinItalic.ttf */,
+				6C55982070C74131B8544DF5 /* Tourney_Expanded-Black.ttf */,
+				1A9CF44C7F124BBAA8B0871D /* Tourney_Expanded-BlackItalic.ttf */,
+				A1836EFBE75B4F5A8938AC62 /* Tourney_Expanded-Bold.ttf */,
+				D09184774102402FB0517D05 /* Tourney_Expanded-BoldItalic.ttf */,
+				199C60DFE6634DA9B7D27CD0 /* Tourney_Expanded-ExtraBold.ttf */,
+				EBD0FF87578645C0A5176895 /* Tourney_Expanded-ExtraBoldItalic.ttf */,
+				BF655C3E41C743CBB628DFE2 /* Tourney_Expanded-ExtraLight.ttf */,
+				9D4AE3076E144776A7300E87 /* Tourney_Expanded-ExtraLightItalic.ttf */,
+				D441F11FC7FD4394A8F37ECB /* Tourney_Expanded-Italic.ttf */,
+				5AA9C1ED1BD5437EBAE07A1B /* Tourney_Expanded-Light.ttf */,
+				293888FD8C044792BEBE9504 /* Tourney_Expanded-LightItalic.ttf */,
+				D288441C13214805A998486F /* Tourney_Expanded-Medium.ttf */,
+				070F6E48A401437A96C643E0 /* Tourney_Expanded-MediumItalic.ttf */,
+				284280DA50824048B9E1698F /* Tourney_Expanded-Regular.ttf */,
+				422DA660E6654BCD81FB9AD4 /* Tourney_Expanded-SemiBold.ttf */,
+				59BE4B58B64E4C32AF59A58B /* Tourney_Expanded-SemiBoldItalic.ttf */,
+				6AE4962B6446469AA3C502CF /* Tourney_Expanded-Thin.ttf */,
+				E0F6460013744857A23F22D3 /* Tourney_Expanded-ThinItalic.ttf */,
+				845CCC95DFC5454CB2E294C0 /* Tourney_SemiCondensed-Black.ttf */,
+				E0485DB7F2B64841A5431DA6 /* Tourney_SemiCondensed-BlackItalic.ttf */,
+				B51BC8771F95433795C32BE6 /* Tourney_SemiCondensed-Bold.ttf */,
+				8A3A058CB732417C8112A626 /* Tourney_SemiCondensed-BoldItalic.ttf */,
+				7BD9665D95FB417CB5A528B3 /* Tourney_SemiCondensed-ExtraBold.ttf */,
+				A76C527357ED4ECE9811168E /* Tourney_SemiCondensed-ExtraBoldItalic.ttf */,
+				3D9AA0C6F7EE4E89B143BE08 /* Tourney_SemiCondensed-ExtraLight.ttf */,
+				1B57B8DCAD464A1B81912CF7 /* Tourney_SemiCondensed-ExtraLightItalic.ttf */,
+				1EB036DA06D4479CAF4809FE /* Tourney_SemiCondensed-Italic.ttf */,
+				73777C786CC44A16A28A8CCC /* Tourney_SemiCondensed-Light.ttf */,
+				F8E21D09610D47519A673FA6 /* Tourney_SemiCondensed-LightItalic.ttf */,
+				21ED53C69DA245E287E55771 /* Tourney_SemiCondensed-Medium.ttf */,
+				9084C52428FE45E088B073A4 /* Tourney_SemiCondensed-MediumItalic.ttf */,
+				6253865E59EF421BB6FE34D3 /* Tourney_SemiCondensed-Regular.ttf */,
+				2416FE774E654AB8ACFDC387 /* Tourney_SemiCondensed-SemiBold.ttf */,
+				E2E723D9C907404DB7F4A94A /* Tourney_SemiCondensed-SemiBoldItalic.ttf */,
+				263867F6920140799D36746C /* Tourney_SemiCondensed-Thin.ttf */,
+				59029D88554F46A4B281483F /* Tourney_SemiCondensed-ThinItalic.ttf */,
+				989E55107D524EC488862430 /* Tourney_SemiExpanded-Black.ttf */,
+				9AE6335B590E49D097C37B2D /* Tourney_SemiExpanded-BlackItalic.ttf */,
+				E1AB15EB6B4C4205A026D1DF /* Tourney_SemiExpanded-Bold.ttf */,
+				E1AB3EBC43AA4661BE62A481 /* Tourney_SemiExpanded-BoldItalic.ttf */,
+				0C5E9C420CA64ED6A9A037E8 /* Tourney_SemiExpanded-ExtraBold.ttf */,
+				8E38E495890B4A3D829C1D73 /* Tourney_SemiExpanded-ExtraBoldItalic.ttf */,
+				BEC40117FFAD4073BFAC49D8 /* Tourney_SemiExpanded-ExtraLight.ttf */,
+				CB092F26B7BD4E7383267AC1 /* Tourney_SemiExpanded-ExtraLightItalic.ttf */,
+				1DD2ABF4F55C4991A66DB576 /* Tourney_SemiExpanded-Italic.ttf */,
+				EF5A643C31B344BD97D89FE6 /* Tourney_SemiExpanded-Light.ttf */,
+				A7CD9D613CBB4326BBA33F95 /* Tourney_SemiExpanded-LightItalic.ttf */,
+				D5FDD121E28D4F578A4A390D /* Tourney_SemiExpanded-Medium.ttf */,
+				46D0A5B01AE3439887A0C567 /* Tourney_SemiExpanded-MediumItalic.ttf */,
+				25EDE33FEE344B6AA8D99A65 /* Tourney_SemiExpanded-Regular.ttf */,
+				EDC54711B85A424798AF05D8 /* Tourney_SemiExpanded-SemiBold.ttf */,
+				230CA10954AD4E1AB7EBA5F2 /* Tourney_SemiExpanded-SemiBoldItalic.ttf */,
+				14AEFCFCB5D7440F8272CB24 /* Tourney_SemiExpanded-Thin.ttf */,
+				C4B232A6494B46A398E607CF /* Tourney_SemiExpanded-ThinItalic.ttf */,
+				32C61BA49F5A4F0186C6D349 /* Tourney-Black.ttf */,
+				F56EB4AF93F045E6BD7B5328 /* Tourney-BlackItalic.ttf */,
+				A0E4DE5932D24940A65152FA /* Tourney-Bold.ttf */,
+				BF196080F02B4A399EB2A755 /* Tourney-BoldItalic.ttf */,
+				3A20839B4A8C4C0884DDE4A6 /* Tourney-ExtraBold.ttf */,
+				DC89107400A74E9580A130BF /* Tourney-ExtraBoldItalic.ttf */,
+				486D268A571248F19EEE56E6 /* Tourney-ExtraLight.ttf */,
+				0E9950BF9F314B89B4CFC959 /* Tourney-ExtraLightItalic.ttf */,
+				8A193E05B32F46D5B042E85F /* Tourney-Italic.ttf */,
+				C7808598218E4C9BBEF91A63 /* Tourney-Light.ttf */,
+				28A5C2746CA44A979EAF1B8C /* Tourney-LightItalic.ttf */,
+				52EA9052155C434EB3FBBECB /* Tourney-Medium.ttf */,
+				E08E8FD6194E444E8F6EC6ED /* Tourney-MediumItalic.ttf */,
+				A02CA7B60BB3429C9F1BEA25 /* Tourney-Regular.ttf */,
+				E5016E6A500E47DAAA9565DC /* Tourney-SemiBold.ttf */,
+				EF027EBF92B748BA8B7EFB48 /* Tourney-SemiBoldItalic.ttf */,
+				3626F42EB09F4E2EB357271E /* Tourney-Thin.ttf */,
+				76AFC7569EDE4EC18ED88F9A /* Tourney-ThinItalic.ttf */,
+				5F35BF8D78FC4A958DCE39F9 /* Tourney-Italic-VariableFont_wdth,wght.ttf */,
+				8C0D667385384B31A1720B77 /* Tourney-VariableFont_wdth,wght.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00E356ED1AD99517003FC87E /* JCWM17Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "JCWM17Tests" */;
+			buildPhases = (
+				00E356EA1AD99517003FC87E /* Sources */,
+				00E356EB1AD99517003FC87E /* Frameworks */,
+				00E356EC1AD99517003FC87E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00E356F51AD99517003FC87E /* PBXTargetDependency */,
+			);
+			name = JCWM17Tests;
+			productName = JCWM17Tests;
+			productReference = 00E356EE1AD99517003FC87E /* JCWM17Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13B07F861A680F5B00A75B9A /* JCWM17 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "JCWM17" */;
+			buildPhases = (
+				FD10A7F022414F080027D42C /* Start Packager */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JCWM17;
+			productName = JCWM17;
+			productReference = 13B07F961A680F5B00A75B9A /* JCWM17.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					00E356ED1AD99517003FC87E = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1120;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "JCWM17" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* JCWM17 */,
+				00E356ED1AD99517003FC87E /* JCWM17Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00E356EC1AD99517003FC87E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				2E89CBAD3A89467A9E2862C8 /* AveriaSansLibre-Bold.ttf in Resources */,
+				DFDD4A93019E4304974E9378 /* AveriaSansLibre-BoldItalic.ttf in Resources */,
+				EBD4400F9E3B42C086E99D9E /* AveriaSansLibre-Italic.ttf in Resources */,
+				2A412D38B1CB4DAF9B5C15CA /* AveriaSansLibre-Light.ttf in Resources */,
+				3E1EBCF6E5024AAC971D8AAE /* AveriaSansLibre-LightItalic.ttf in Resources */,
+				706979A5C451409CB7ADF052 /* AveriaSansLibre-Regular.ttf in Resources */,
+				14FBEAE10F69434AAE915B90 /* Tourney_Condensed-Black.ttf in Resources */,
+				45CE6DCA42A548F9B2F274D9 /* Tourney_Condensed-BlackItalic.ttf in Resources */,
+				628B58A9333C4DC9A72C266E /* Tourney_Condensed-Bold.ttf in Resources */,
+				797766D63E5C47D6B95B183C /* Tourney_Condensed-BoldItalic.ttf in Resources */,
+				005CF2BD2E7842798749AE2E /* Tourney_Condensed-ExtraBold.ttf in Resources */,
+				B712CD25FD2B441CADFBE39E /* Tourney_Condensed-ExtraBoldItalic.ttf in Resources */,
+				7F8F0576E239487BB0DEB309 /* Tourney_Condensed-ExtraLight.ttf in Resources */,
+				EA4722BA78EE4E94AFD25DA7 /* Tourney_Condensed-ExtraLightItalic.ttf in Resources */,
+				1A5ADD53ACEC41AA86EE0B82 /* Tourney_Condensed-Italic.ttf in Resources */,
+				AC75B65058164F99AAF87ED0 /* Tourney_Condensed-Light.ttf in Resources */,
+				14322BB05736495581384BCE /* Tourney_Condensed-LightItalic.ttf in Resources */,
+				A3B3A65D8E6F40AD8602561C /* Tourney_Condensed-Medium.ttf in Resources */,
+				90F882E8A7884AE3A573C0A6 /* Tourney_Condensed-MediumItalic.ttf in Resources */,
+				B533D687BD3440D2AB097C7C /* Tourney_Condensed-Regular.ttf in Resources */,
+				25F15A3742274FF9995F52A5 /* Tourney_Condensed-SemiBold.ttf in Resources */,
+				EBBD1919D4F84B25A945731A /* Tourney_Condensed-SemiBoldItalic.ttf in Resources */,
+				D358D3DDF610486D978BF2A3 /* Tourney_Condensed-Thin.ttf in Resources */,
+				888AFDA9E9C64AF68250F145 /* Tourney_Condensed-ThinItalic.ttf in Resources */,
+				420988917475408AB0E26CFE /* Tourney_Expanded-Black.ttf in Resources */,
+				BD30EEC498D3437BA4162AF1 /* Tourney_Expanded-BlackItalic.ttf in Resources */,
+				17FFF483B45345CD9D7E3D41 /* Tourney_Expanded-Bold.ttf in Resources */,
+				5A86DF3697964F1093F92B9F /* Tourney_Expanded-BoldItalic.ttf in Resources */,
+				EDD3F6218536466281606B4A /* Tourney_Expanded-ExtraBold.ttf in Resources */,
+				FE765BDDCA374E528E8AB879 /* Tourney_Expanded-ExtraBoldItalic.ttf in Resources */,
+				72704C51FB2448D78BFD0CAD /* Tourney_Expanded-ExtraLight.ttf in Resources */,
+				1BB1C9D2AFC841D289F57A6E /* Tourney_Expanded-ExtraLightItalic.ttf in Resources */,
+				4D22F6996C3F489588600AE1 /* Tourney_Expanded-Italic.ttf in Resources */,
+				4C923010629D4E7389041C85 /* Tourney_Expanded-Light.ttf in Resources */,
+				CD8F70A3C870480FAFB5B6D9 /* Tourney_Expanded-LightItalic.ttf in Resources */,
+				AC8EB1AE90CA4EA6B1ED1AAB /* Tourney_Expanded-Medium.ttf in Resources */,
+				F4B7A97ECAA74F99A85DDC53 /* Tourney_Expanded-MediumItalic.ttf in Resources */,
+				E79DF12C917A4458AC6A73FA /* Tourney_Expanded-Regular.ttf in Resources */,
+				07D3F4BC4C2B49ED819B6F79 /* Tourney_Expanded-SemiBold.ttf in Resources */,
+				5C97B310DF53424DA0C8C126 /* Tourney_Expanded-SemiBoldItalic.ttf in Resources */,
+				E5DCAC8BD3384A60A4C54438 /* Tourney_Expanded-Thin.ttf in Resources */,
+				83485EE64181474594672DC9 /* Tourney_Expanded-ThinItalic.ttf in Resources */,
+				4CF833F2B021481E936D5FDC /* Tourney_SemiCondensed-Black.ttf in Resources */,
+				D129D20CF612481E87B02BED /* Tourney_SemiCondensed-BlackItalic.ttf in Resources */,
+				B60E15ECB8D545B68AC932CC /* Tourney_SemiCondensed-Bold.ttf in Resources */,
+				AC60FABDDBC34A90B699EAD4 /* Tourney_SemiCondensed-BoldItalic.ttf in Resources */,
+				3262BF2BAB974682A4321BA9 /* Tourney_SemiCondensed-ExtraBold.ttf in Resources */,
+				AE1308C235EC4FA3AF994C1C /* Tourney_SemiCondensed-ExtraBoldItalic.ttf in Resources */,
+				0B00ECD8D174491D9F6A65BB /* Tourney_SemiCondensed-ExtraLight.ttf in Resources */,
+				CC61A29AFBB7416E935ADA04 /* Tourney_SemiCondensed-ExtraLightItalic.ttf in Resources */,
+				ACA71FC63C46434CB52224B4 /* Tourney_SemiCondensed-Italic.ttf in Resources */,
+				3EE0E33C2A774F1E96A752F5 /* Tourney_SemiCondensed-Light.ttf in Resources */,
+				AAA4152B97174630856B4678 /* Tourney_SemiCondensed-LightItalic.ttf in Resources */,
+				913FC5BA02E240F2B5468082 /* Tourney_SemiCondensed-Medium.ttf in Resources */,
+				18BB80610A4C48C1BC2E8B79 /* Tourney_SemiCondensed-MediumItalic.ttf in Resources */,
+				B76C248ED4E44625A6D5B2C5 /* Tourney_SemiCondensed-Regular.ttf in Resources */,
+				4110037F5A6541078C73B393 /* Tourney_SemiCondensed-SemiBold.ttf in Resources */,
+				49F7E222E72248E49D1699CA /* Tourney_SemiCondensed-SemiBoldItalic.ttf in Resources */,
+				205619031B474761BF24785E /* Tourney_SemiCondensed-Thin.ttf in Resources */,
+				4BEA23B0F7574B7EAD401E0B /* Tourney_SemiCondensed-ThinItalic.ttf in Resources */,
+				95062F90F7674D37B670F2C3 /* Tourney_SemiExpanded-Black.ttf in Resources */,
+				6055CCA3177247DB989BD6BD /* Tourney_SemiExpanded-BlackItalic.ttf in Resources */,
+				A9E4FC4217544F12B210F6D2 /* Tourney_SemiExpanded-Bold.ttf in Resources */,
+				FEB7BF39631247E0979C6F39 /* Tourney_SemiExpanded-BoldItalic.ttf in Resources */,
+				CA2DBB1FBD8347C8839D86AA /* Tourney_SemiExpanded-ExtraBold.ttf in Resources */,
+				3172523BDE4446DCBB46843C /* Tourney_SemiExpanded-ExtraBoldItalic.ttf in Resources */,
+				9762B201AE214FB8916CC3A6 /* Tourney_SemiExpanded-ExtraLight.ttf in Resources */,
+				88C4FC14E25F45F485F100AB /* Tourney_SemiExpanded-ExtraLightItalic.ttf in Resources */,
+				AB515FE241B247E9B0BB670F /* Tourney_SemiExpanded-Italic.ttf in Resources */,
+				1BF33476C5B2441AB207A9DA /* Tourney_SemiExpanded-Light.ttf in Resources */,
+				FFED7B9F1A6448639345AEC2 /* Tourney_SemiExpanded-LightItalic.ttf in Resources */,
+				9C0EF283046448A6A6128BEB /* Tourney_SemiExpanded-Medium.ttf in Resources */,
+				CB9E5D2984854D7D9DC0F135 /* Tourney_SemiExpanded-MediumItalic.ttf in Resources */,
+				1C36AE4D6F384986839C49E5 /* Tourney_SemiExpanded-Regular.ttf in Resources */,
+				B11B4F27B81B4C5A919B97E9 /* Tourney_SemiExpanded-SemiBold.ttf in Resources */,
+				1268592D1EDE434FA802FD5D /* Tourney_SemiExpanded-SemiBoldItalic.ttf in Resources */,
+				0B7BD35EBB024F6A97EEA001 /* Tourney_SemiExpanded-Thin.ttf in Resources */,
+				EABFD9D51F484EB098EF5336 /* Tourney_SemiExpanded-ThinItalic.ttf in Resources */,
+				9B710D35651D4903AAEE7DF8 /* Tourney-Black.ttf in Resources */,
+				540992A4F39446DA94BFD6F9 /* Tourney-BlackItalic.ttf in Resources */,
+				9187DA3B29B041F2A0E39964 /* Tourney-Bold.ttf in Resources */,
+				E98C7202DD8C48E5AD24A029 /* Tourney-BoldItalic.ttf in Resources */,
+				0DAD5EFF4F9449D49E33DE24 /* Tourney-ExtraBold.ttf in Resources */,
+				8E990227794E4A75ABF5C5EE /* Tourney-ExtraBoldItalic.ttf in Resources */,
+				62866CCC9C2E43E3A3AA4719 /* Tourney-ExtraLight.ttf in Resources */,
+				74EE463C64AD4DC8A595F630 /* Tourney-ExtraLightItalic.ttf in Resources */,
+				13F551AF6B7E492E8F82581A /* Tourney-Italic.ttf in Resources */,
+				A96DE3EB261D4ED1BCC3D30B /* Tourney-Light.ttf in Resources */,
+				7092C44AC7834C74A248DEA2 /* Tourney-LightItalic.ttf in Resources */,
+				3C5C49BA0D6745D5AABA2F5C /* Tourney-Medium.ttf in Resources */,
+				3D072FCE58D3443595B0E85D /* Tourney-MediumItalic.ttf in Resources */,
+				A76B9FCC70324D14A888FA3A /* Tourney-Regular.ttf in Resources */,
+				D76FB82506834439BB50CA86 /* Tourney-SemiBold.ttf in Resources */,
+				49A61DBF7E94457588BAF002 /* Tourney-SemiBoldItalic.ttf in Resources */,
+				746275F46A9349C99D516742 /* Tourney-Thin.ttf in Resources */,
+				0AA5F58A3F4340B1BD5FB851 /* Tourney-ThinItalic.ttf in Resources */,
+				93C9D85710A3442080376BEF /* Tourney-Italic-VariableFont_wdth,wght.ttf in Resources */,
+				FF3F2836C1724FE1B8D7F79B /* Tourney-VariableFont_wdth,wght.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
+		};
+		FD10A7F022414F080027D42C /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00E356EA1AD99517003FC87E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E356F31AD99517003FC87E /* JCWM17Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13B07F861A680F5B00A75B9A /* JCWM17 */;
+			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00E356F61AD99517003FC87E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JCWM17Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JCWM17.app/JCWM17";
+			};
+			name = Debug;
+		};
+		00E356F71AD99517003FC87E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COPY_PHASE_STRIP = NO;
+				INFOPLIST_FILE = JCWM17Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JCWM17.app/JCWM17";
+			};
+			name = Release;
+		};
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = JCWM17/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = JCWM17;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = JCWM17/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = JCWM17;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "JCWM17Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E356F61AD99517003FC87E /* Debug */,
+				00E356F71AD99517003FC87E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "JCWM17" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "JCWM17" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}
