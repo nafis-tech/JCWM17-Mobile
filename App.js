@@ -1,33 +1,234 @@
-import React from 'react';
+// import React from 'react';
+// import {
+//   NavigationContainer
+// } from '@react-navigation/native'
+
+// //importLesson misal mau di tampilkan disini
+// import TopicDay2 from './android/src/pages/TopicDay2';
+// import TopicDay3FlatList from './android/src/pages/TopicDay3FlatList';
+// import TopicDay3Image from './android/src/pages/TopicDay3Image';
+// import TopicDay4 from './android/src/pages/TopicDay4';
+// import TopicDay5 from './android/src/pages/TopicDay5';
+
+// //import navigator
+// import MainNavigator from './android/src/navigator/mainNavigator';
+
+// // import screen MainNavigator : loginRegNav & BottomTabNav 
+// // import screen LoginRegNav : login, register
+// // import screen BottomTabNav : stackNav, topTabNav
+// // import screen StackNav : home, comment, profile
+
+
+// //setup redux
+// import { Provider } from 'react-redux'
+// import { createStore, applyMiddleware } from 'redux'
+// import ReduxThunk from 'redux-thunk'
+// import allReducer from './android/src/redux/reducers'
+// const globalState = createStore(allReducer, applyMiddleware())
+
+// const App = () => {
+//   return (
+//     <Provider store={globalState}>
+//       <MainNavigator />
+//     </Provider>
+//   )
+// };
+
+// export default App;
+
+
+/** NOTIFICATION
+* Sample React Native App
+* https://github.com/facebook/react-native
+*
+* @format
+* @flow
+*/
+
+import React, {Component} from 'react';
 import {
-  NavigationContainer
-} from '@react-navigation/native'
+ TextInput,
+ StyleSheet,
+ Text,
+ View,
+ TouchableOpacity,
+ Alert,
+} from 'react-native';
+import NotifService from './NotifService';
 
-//importLesson misal mau di tampilkan disini
-import TopicDay2 from './android/src/pages/TopicDay2';
-import TopicDay3FlatList from './android/src/pages/TopicDay3FlatList';
-import TopicDay3Image from './android/src/pages/TopicDay3Image';
-import TopicDay4 from './android/src/pages/TopicDay4';
-import TopicDay5 from './android/src/pages/TopicDay5';
+export default class App extends Component {
+ constructor(props) {
+   super(props);
+   this.state = {};
 
-//import navigator
-import StackNav from './android/src/navigator/stackNav'
-import BottomtabNav from './android/src/navigator/bottomTabNav';
+   this.notif = new NotifService(
+     this.onRegister.bind(this),
+     this.onNotif.bind(this),
+   );
+ }
 
-// //import screen sudah di taruh StackNav, jadi gak perlu di import disini
-// import Home from './android/src/screens/home';
-// import Profile from './android/src/screens/profile';
-// import Comment from './android/src/screens/comment';
+ render() {
+   return (
+     <View style={styles.container}>
+       <Text style={styles.title}>
+         Example app react-native-push-notification
+       </Text>
+       <View style={styles.spacer}></View>
+       <TextInput
+         style={styles.textField}
+         value={this.state.registerToken}
+         placeholder="Register token"
+       />
+       <View style={styles.spacer}></View>
 
-const App = () => {
-  return (
-    <NavigationContainer>
-      {/* <StackNav /> */}
-      <BottomtabNav />
-    </NavigationContainer>
-   
-    
-  )
-};
+       <TouchableOpacity
+         style={styles.button}
+         onPress={() => {
+           this.notif.localNotif();
+         }}>
+         <Text>Local Notification (now)</Text>
+       </TouchableOpacity>
+       <TouchableOpacity
+         style={styles.button}
+         onPress={() => {
+           this.notif.localNotif('sample.mp3');
+         }}>
+         <Text>Local Notification with sound (now)</Text>
+       </TouchableOpacity>
+       <TouchableOpacity
+         style={styles.button}
+         onPress={() => {
+           this.notif.scheduleNotif();
+         }}>
+         <Text>Schedule Notification in 30s</Text>
+       </TouchableOpacity>
+       <TouchableOpacity
+         style={styles.button}
+         onPress={() => {
+           this.notif.scheduleNotif('sample.mp3');
+         }}>
+         <Text>Schedule Notification with sound in 30s</Text>
+       </TouchableOpacity>
+       <TouchableOpacity
+         style={styles.button}
+         onPress={() => {
+           this.notif.cancelNotif();
+         }}>
+         <Text>Cancel last notification (if any)</Text>
+       </TouchableOpacity>
+       <TouchableOpacity
+         style={styles.button}
+         onPress={() => {
+           this.notif.cancelAll();
+         }}>
+         <Text>Cancel all notifications</Text>
+       </TouchableOpacity>
+       <TouchableOpacity
+         style={styles.button}
+         onPress={() => {
+           this.notif.checkPermission(this.handlePerm.bind(this));
+         }}>
+         <Text>Check Permission</Text>
+       </TouchableOpacity>
+       <TouchableOpacity
+         style={styles.button}
+         onPress={() => {
+           this.notif.requestPermissions();
+         }}>
+         <Text>Request Permissions</Text>
+       </TouchableOpacity>
+       <TouchableOpacity
+         style={styles.button}
+         onPress={() => {
+           this.notif.abandonPermissions();
+         }}>
+         <Text>Abandon Permissions</Text>
+       </TouchableOpacity>
+       <TouchableOpacity
+         style={styles.button}
+         onPress={() => {
+           this.notif.getScheduledLocalNotifications(notifs => console.log(notifs));
+         }}>
+         <Text>Console.Log Scheduled Local Notifications</Text>
+       </TouchableOpacity>
+       <TouchableOpacity
+         style={styles.button}
+         onPress={() => {
+           this.notif.getDeliveredNotifications(notifs => console.log(notifs));
+         }}>
+         <Text>Console.Log Delivered Notifications</Text>
+       </TouchableOpacity>
+       <TouchableOpacity
+         style={styles.button}
+         onPress={() => {
+           this.notif.createOrUpdateChannel();
+         }}>
+         <Text>Create or update a channel</Text>
+       </TouchableOpacity>
+       <TouchableOpacity
+         style={styles.button}
+         onPress={() => {
+           this.notif.popInitialNotification();
+         }}>
+         <Text>popInitialNotification</Text>
+       </TouchableOpacity>
 
-export default App;
+       <View style={styles.spacer}></View>
+
+       {this.state.fcmRegistered && <Text>FCM Configured !</Text>}
+
+       <View style={styles.spacer}></View>
+     </View>
+   );
+ }
+
+ onRegister(token) {
+   this.setState({registerToken: token.token, fcmRegistered: true});
+ }
+
+ onNotif(notif) {
+   Alert.alert(notif.title, notif.message);
+ }
+
+ handlePerm(perms) {
+   Alert.alert('Permissions', JSON.stringify(perms));
+ }
+}
+
+const styles = StyleSheet.create({
+ container: {
+   flex: 1,
+   justifyContent: 'center',
+   alignItems: 'center',
+   backgroundColor: '#F5FCFF',
+ },
+ welcome: {
+   fontSize: 20,
+   textAlign: 'center',
+   margin: 10,
+ },
+ button: {
+   borderWidth: 1,
+   borderColor: '#000000',
+   margin: 5,
+   padding: 5,
+   width: '70%',
+   backgroundColor: '#DDDDDD',
+   borderRadius: 5,
+ },
+ textField: {
+   borderWidth: 1,
+   borderColor: '#AAAAAA',
+   margin: 5,
+   padding: 5,
+   width: '70%',
+ },
+ spacer: {
+   height: 10,
+ },
+ title: {
+   fontWeight: 'bold',
+   fontSize: 20,
+   textAlign: 'center',
+ },
+});

@@ -9,9 +9,14 @@ import {
 } from 'react-native'
 import { BtnCustom } from '../components/button'
 import Ionicons from 'react-native-vector-icons/Ionicons'
+import { useSelector } from 'react-redux'
+
 
 const Home = ({navigation, route}) => {
     //props.navigation --> navigation, route keduanya sama2 dari props
+    const dataUser = useSelector((state) => state.userReducer)
+    console.log(dataUser) //hasil : object di userReducer
+    
     const users = [
         {
             username: 'Naruto',
@@ -33,6 +38,7 @@ const Home = ({navigation, route}) => {
             <Text style={{ fontSize: 25 }}>Home Screen</Text>
             <Ionicons name="home" size={50} color="orange" />
             <Text>Data dari profile : {data?.previous}</Text>
+            <Text>{dataUser.username}</Text>
             <Button
                 title="Navigate to Profile"
                 onPress={ () => navigation.push("Profile", {username: 'Nafis'})}
@@ -40,13 +46,13 @@ const Home = ({navigation, route}) => {
             <FlatList 
             data={users}
             renderItem={({item}) => (
-                <View>
+                <View style={{flexDirection: 'row', padding: 9, justifyContent: 'space-between'}}>
                     <Text style={styles.contuser}>{item.username}</Text>
                     {/* <Button 
                         title="See Profile"
                         onPress={ () => navigation.push("profile", item)}
                     /> */}
-                    <BtnCustom navToProfile={ () => navigation.push("Profile", item)} />
+                    <BtnCustom  navToProfile={ () => navigation.push("Profile", item)} />
                 </View>
             )}
             style={{marginTop:10, marginBottom: 10}}
